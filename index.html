@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Weekly roundup of Thailand and Bangkok textile and garment news, updated every Monday.">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style><title>Thai Textile Weekly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=Sarabun:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column, like a weekly trade bulletin. Masthead, then this week's lead, then news grouped by topic, then an archive of past issues. */
+:root {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --ink: #1b2140;
+  --muted: #5b6283;
+  --line: #dde0ec;
+  --indigo: #2b3a8c;
+  --saffron: #c98a12;
+  --saffron-soft: #fbf1dc;
+  --indigo-soft: #e8ebf8;
+  --font-display: "Bai Jamjuree", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Sarabun", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11142a; --surface: #191d38; --ink: #e8eaf6; --muted: #a2a8c8; --line: #2c3156;
+    --indigo: #9fb0ff; --saffron: #f0b440; --saffron-soft: #3a2f17; --indigo-soft: #232a52;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11142a; --surface: #191d38; --ink: #e8eaf6; --muted: #a2a8c8; --line: #2c3156;
+  --indigo: #9fb0ff; --saffron: #f0b440; --saffron-soft: #3a2f17; --indigo-soft: #232a52;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 760px; margin: 0 auto; padding-inline: 16px; padding-block: 32px 64px; display: flex; flex-direction: column; gap: 40px; }
+a { color: var(--indigo); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--saffron); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.25; }
+
+/* Masthead with a woven stripe, after mudmee ikat bands */
+.masthead { display: flex; flex-direction: column; gap: 12px; }
+.weave { height: 10px; border-radius: 2px; background:
+  repeating-linear-gradient(90deg, var(--indigo) 0 18px, var(--saffron) 18px 24px, var(--indigo) 24px 30px, transparent 30px 36px); opacity: .9; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 16px; }
+h1 { font-size: clamp(32px, 6vw, 44px); font-weight: 700; color: var(--ink); }
+.dek { color: var(--muted); max-width: 62ch; margin: 0; }
+
+/* Lead box */
+.lead { background: var(--indigo-soft); border-radius: 10px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+.lead h2 { font-size: 14px; font-family: var(--font-mono); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--indigo); }
+.lead ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+
+/* Sections */
+section { display: flex; flex-direction: column; gap: 16px; }
+section > h2 { font-size: 22px; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+.items { display: flex; flex-direction: column; gap: 18px; }
+article { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+article h3 { font-size: 17px; font-weight: 600; }
+article p { margin: 0; max-width: 68ch; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.chip { font-family: var(--font-mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; }
+.chip.new { background: var(--saffron-soft); color: var(--saffron); }
+.chip.bg { background: var(--indigo-soft); color: var(--indigo); }
+.note { font-size: 14px; color: var(--muted); border-left: 3px solid var(--saffron); padding-left: 12px; margin: 0; }
+
+/* Archive */
+.archive ol { margin: 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.archive li { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 15px; }
+.archive time { font-family: var(--font-mono); font-size: 13px; color: var(--muted); min-width: 92px; font-variant-numeric: tabular-nums; }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="weave" aria-hidden="true"></div>
+    <div class="eyebrow">
+      <span>Issue: Mon 19 Oct 2026</span>
+      <span>Updated every Monday</span>
+      <span>Thailand · Bangkok</span>
+    </div>
+    <h1>Thai Textile Weekly</h1>
+    <p class="dek">News on Thailand's textile and garment industry, with a focus on Bangkok. Trade, tariffs, factories, events and the craft scene, collected each Monday with links to the original reports.</p>
+  </header>
+
+  <div class="lead" id="this-week">
+    <h2>This week in brief</h2>
+    <ul>
+      <li>Thai community fabrics are on show at the IMF–World Bank Annual Meetings in Bangkok (Oct 12–18).</li>
+      <li>The 12.5% US Section 301 tariff on Thai garments and textiles, in force since July 24, remains the main pressure on exporters.</li>
+      <li>Rising wages and unfilled jobs keep squeezing Thai mills against Vietnam, India and China.</li>
+    </ul>
+  </div>
+
+  <section id="bangkok">
+    <h2>Bangkok</h2>
+    <div class="items">
+      <article>
+        <div class="meta"><span class="chip new">This week</span><span>Nation Thailand</span></div>
+        <h3>Community textiles line the IMF–World Bank meeting rooms</h3>
+        <p>The Bank of Thailand picked fabrics with 37 patterns, made by 26 communities in 21 provinces, as sound-absorbing panels for the meeting rooms. Batik from Pattani is among them.</p>
+        <a href="https://www.nationthailand.com/life/art-culture/40072193" target="_blank" rel="noopener">Read the report</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="trade">
+    <h2>Trade and tariffs</h2>
+    <div class="items">
+      <article>
+        <div class="meta"><span class="chip bg">Since Jul 2026</span><span>Nation Thailand · Bangkok Post</span></div>
+        <h3>12.5% US tariff now applies to Thai garments and textiles</h3>
+        <p>The US placed a Section 301 tariff, linked to forced-labour rules, on most Thai imports from July 24, 2026, replacing the earlier reciprocal rate. Some sources still quote 19% or 36%, so check USTR or CBP for the official rate.</p>
+        <div class="meta">
+          <a href="https://www.nationthailand.com/business/economy/40068988" target="_blank" rel="noopener">Nation Thailand</a>
+          <a href="https://www.bangkokpost.com/business/general/3265870/new-us-tariff-could-threaten-thai-exports" target="_blank" rel="noopener">Bangkok Post</a>
+        </div>
+      </article>
+      <article>
+        <div class="meta"><span class="chip bg">Background</span><span>Business &amp; Human Rights Resource Centre</span></div>
+        <h3>US buys about 40% of Thai garment exports</h3>
+        <p>Japan takes about 18%. The sector employs roughly 600,000 to 800,000 people. Exporters have asked the government to slow minimum-wage increases and to pursue a free trade agreement with the EU.</p>
+        <a href="https://www.business-humanrights.org/en/latest-news/thailand-garment-exporters-call-for-govt-to-delay-minimum-wage-hike-following-29-us-tariff/" target="_blank" rel="noopener">Read the report</a>
+      </article>
+      <article>
+        <div class="meta"><span class="chip bg">Since Feb 2026</span><span>Bangkok Post</span></div>
+        <h3>Tariff refunds still unclear after US court ruling</h3>
+        <p>Federation of Thai Industries chair Kriengkrai Thiennukul warned of continuing challenges and said it was still unclear how importers would get refunds of duties already paid.</p>
+        <a href="https://www.bangkokpost.com/business/general/3202365/little-reprieve-for-thailand-after-us-tariff-ruling" target="_blank" rel="noopener">Read the report</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>Events and trade fairs</h2>
+    <div class="items">
+      <article>
+        <div class="meta"><span class="chip bg">Held Jun 2026</span><span>IMPACT Muang Thong Thani</span></div>
+        <h3>2nd Asia Sourcing Show and Global Sourcing Summit</h3>
+        <p>Organised with the ASEAN Federation of Textile Industries. The show focused on supply chains moving because of tariffs and geopolitics. Listed dates were June 3–5; one report puts the opening on June 16.</p>
+        <div class="meta">
+          <a href="https://www.bangkokpost.com/thailand/pr/3251829/bangkok-hosts-2nd-asia-sourcing-show-2026-redefining-global-textile-apparel-supply-chains" target="_blank" rel="noopener">Bangkok Post</a>
+          <a href="https://textilefocus.com/asias-textile-apparel-industry-converges-in-bangkok-as-2nd-asia-sourcing-show-2026-and-global-sourcing-summit-2026-officially-open/" target="_blank" rel="noopener">Textile Focus</a>
+        </div>
+      </article>
+      <article>
+        <div class="meta"><span class="chip bg">Held Jul 2026</span><span>BITEC Bangna</span></div>
+        <h3>GFT 2026, garment and textile machinery fair</h3>
+        <p>Held July 1–4. It is Thailand's main fair for garment and textile production technology.</p>
+        <a href="https://www.tradeindia.com/tradeshows/145520/gft-garment-textile-industry-2026.html" target="_blank" rel="noopener">Event listing</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="industry">
+    <h2>Industry and market</h2>
+    <div class="items">
+      <article>
+        <div class="meta"><span class="chip bg">Background</span><span>Mordor Intelligence</span></div>
+        <h3>Market near USD 5 billion, growing slowly</h3>
+        <p>One estimate puts the market at about USD 4.97 billion in 2026, growing about 1.6% a year to 2031. Rising wages and about 23,000 unfilled jobs, as workers move to electronics and car plants, add to cost pressure. Dyeing and wastewater compliance also push costs up.</p>
+        <a href="https://www.mordorintelligence.com/industry-reports/thailand-textile-market" target="_blank" rel="noopener">Read the report</a>
+      </article>
+      <article>
+        <div class="meta"><span class="chip bg">Background</span><span>Fibre2Fashion</span></div>
+        <h3>Fabric and yarn imports rise, led by China</h3>
+        <p>Thailand's textile imports grew modestly in January–October 2025, with China the main supplier of fabric and yarn.</p>
+        <a href="https://www.fibre2fashion.com/news/prime-content/textile-news/thailand-s-textile-imports-rise-china-leads-in-fabric-yarn-sourcing-307905-newsdetails.htm" target="_blank" rel="noopener">Read the report</a>
+      </article>
+    </div>
+    <p class="note">Items marked "Background" are older reports kept for context. Items marked "This week" were published in the past seven days.</p>
+  </section>
+
+  <section class="archive" id="archive">
+    <h2>Past issues</h2>
+    <ol>
+      <li><time datetime="2026-10-19">19 Oct 2026</time><span>First issue. IMF–World Bank textile display, the 12.5% US tariff, and 2026 Bangkok trade fairs.</span></li>
+    </ol>
+  </section>
+
+  <footer>Collected from public news sources each Monday. Figures come from the linked reports; check the originals before relying on them.</footer>
+</div>
+
+</body>
+</html>
